@@ -1,0 +1,22 @@
+*{
+        margin: 0;
+    }
+    header{
+         width: 100%;
+         border: 1px solid green;
+    }
+    
+    header .d_top_header{
+        background-color: #34B1DA;
+        padding: 10px;
+        color: white;
+        font-size: 25px;
+    }
+    
+    .left_top_header{
+        width: 30%;
+    }
+    
+    .right_top_header{
+        flex: 1;
+    }

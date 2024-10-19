@@ -1,0 +1,25 @@
+.container{
+        width: 80%;
+    
+        margin: auto;
+    }
+    
+    .d-flex{
+        display: flex;
+    }
+    
+    .items-center{
+        align-items: center;
+    }
+    
+    .justify-end{
+        justify-content: end;
+    }
+    
+    .text-end{
+        text-align: end;
+    }
+    
+    .gap-10{
+        gap: 10px;
+    }
