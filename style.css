@@ -1,22 +1,180 @@
+:root{
+    --primary:#34B1DA;
+    --text-secondary:#FFFFFF;
+    --text-balck:#000;
+    --bg-balck:#000;
+    --bg-secondary:#F2F2F2;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
 *{
-        margin: 0;
-    }
-    header{
-         width: 100%;
-         border: 1px solid green;
-    }
+    margin: 0;
+}
+header{
+     width: 100%;
+     border: 1px solid green;
+}
+
+header .d_top_header{
+    background-color: var(--primary);
+    color: white;
+    font-size: 25px;
+}
+
+.left_top_header{
+    width: 40%;
+
+}
+
+.right_top_header{
+    flex: 1;
+}
+
+.d_middle_part_header{
+    background-color: #F2F2F2;
+}
+
+.d_middle_part_header .d_middle_inner_part{
+  padding: 30px 0;
+}
+
+.d_search{
+    width: 55%;
+     height: fit-content;
     
-    header .d_top_header{
-        background-color: #34B1DA;
-        padding: 10px;
-        color: white;
-        font-size: 25px;
-    }
-    
-    .left_top_header{
-        width: 30%;
-    }
-    
-    .right_top_header{
-        flex: 1;
-    }
+}
+
+.d_search input{
+flex: 1;
+background: none;
+outline: none;
+ padding: 10px;
+ border: none;
+ border: 1px solid #8080802c;
+ border-top-left-radius: 5px;
+ border-bottom-left-radius: 5px;
+
+}
+
+.d_search button{
+    background-color: var(--primary);
+    color: var(--text-secondary);
+    border: none;
+    padding: 0 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.d_search button:hover{
+    background-color:var(--text-balck) ;
+}
+.d_contact{
+    font-size: 25px;
+}
+.d_contact h5:hover{
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.d_bottom__header_part .d_left_box{
+      flex: 0.2;
+     color: var(--text-secondary);
+     background-color: var(--primary);
+     padding: 15px 25px;
+     font-size: 20px;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+}
+
+.d_bottom__header_part .d_right_box{
+    flex: 1;
+   align-items: stretch;
+    background-color: var(--bg-balck);
+}
+.d_bottom__header_part .d_right_box ul{
+    height: 100%;
+    align-items: center;
+}
+.d_bottom__header_part .d_right_box ul li {
+  padding: 10px 15px;
+  color: var(--text-secondary);
+
+}
+
+.d_bottom__header_part .d_right_box ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.d_bottom__header_part .d_right_box ul li a:hover{
+    color: var(--primary);
+}
+
+li.d_cart_items{
+    background-color: var(--primary);
+    margin-left: auto;
+    align-self: stretch;
+    padding: 0px 25px !important;
+
+}
+
+.d_banner{
+  background-color: var(--bg-secondary);
+
+}
+.d_banner .d_slide{
+    height: 300px;
+    padding: 50px 20px 0px 20px;
+    background: url(https://livedemo00-opencart.template-help.com/opencart_prod-23516/image/cache/catalog/slide-2-870x345.jpg);
+    background-repeat: no-repeat ;
+    /* background-position-x: 100px; */
+    background-size: cover;
+
+}
+.d_banner .d_slide span{
+    font-size: 12px;
+    color: gray;
+} 
+
+.d_banner .d_slide h2{
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.d_arrivals{
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    /* background-position: center; */
+    background: url(https://livedemo00-opencart.template-help.com/opencart_prod-23516/image/cache/catalog/banner-1-570x350.jpg);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid transparent;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 190px;
+    gap: 5px;
+  }
+
+  .grid-item:hover{
+      border: 2px solid green;
+  }
